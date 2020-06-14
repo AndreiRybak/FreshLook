@@ -162,12 +162,47 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="zMp-3g-XPU" kind="relationship" relationship="rootViewController" id="h3L-ob-RkA"/>
+                        <segue destination="Nod-W4-ygG" kind="relationship" relationship="rootViewController" id="PWQ-SB-yu2"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hr9-WN-20l" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-104" y="-216"/>
+        </scene>
+        <!--Services View Controller-->
+        <scene sceneID="fHw-GV-Mg7">
+            <objects>
+                <viewController id="Nod-W4-ygG" customClass="ServicesViewController" customModule="FreshLook" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ekn-84-nlK">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Dkb-ga-HeO">
+                                <rect key="frame" x="13" y="88" width="388" height="725"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="Nod-W4-ygG" id="8A1-NS-RQI"/>
+                                    <outlet property="delegate" destination="Nod-W4-ygG" id="OOa-Ap-7ei"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Dkb-ga-HeO" firstAttribute="leading" secondItem="1Jd-ft-TfW" secondAttribute="leading" constant="13" id="GH6-D6-zoS"/>
+                            <constraint firstItem="Dkb-ga-HeO" firstAttribute="top" secondItem="1Jd-ft-TfW" secondAttribute="top" id="PPj-v9-STw"/>
+                            <constraint firstItem="1Jd-ft-TfW" firstAttribute="trailing" secondItem="Dkb-ga-HeO" secondAttribute="trailing" constant="13" id="bAd-rJ-yO3"/>
+                            <constraint firstItem="1Jd-ft-TfW" firstAttribute="bottom" secondItem="Dkb-ga-HeO" secondAttribute="bottom" id="ohy-Dg-iTl"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="1Jd-ft-TfW"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="r3I-gP-sK3"/>
+                    <connections>
+                        <outlet property="tableView" destination="Dkb-ga-HeO" id="ZIa-dH-Glf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PVh-Eg-A8Y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="893" y="-216"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Kgc-mF-hrU">
@@ -234,22 +269,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oRY-rI-ple" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="893" y="1245"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="5Z4-XF-fsC">
-            <objects>
-                <viewController id="zMp-3g-XPU" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="apA-YT-Vix">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="CcV-jN-GOW"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="2Ug-sr-0NE"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Z9L-HD-jsg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="893" y="-216"/>
         </scene>
     </scenes>
     <resources>

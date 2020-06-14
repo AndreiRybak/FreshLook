@@ -37,6 +37,15 @@
 		D8D629442496496E00694A6D /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D8D629202496157800694A6D /* OpenSans-Regular.ttf */; };
 		D8D629452496496F00694A6D /* OpenSans-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D8D629182496157700694A6D /* OpenSans-Semibold.ttf */; };
 		D8D629462496497100694A6D /* OpenSans-SemiboldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D8D6291B2496157700694A6D /* OpenSans-SemiboldItalic.ttf */; };
+		D8D6294E249694FC00694A6D /* ServicesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D6294C249694FC00694A6D /* ServicesTableViewCell.swift */; };
+		D8D6294F249694FC00694A6D /* ServicesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8D6294D249694FC00694A6D /* ServicesTableViewCell.xib */; };
+		D8D629512496992200694A6D /* ServicesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D629502496992200694A6D /* ServicesViewController.swift */; };
+		D8D6295324969AEA00694A6D /* ServicesDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D6295224969AEA00694A6D /* ServicesDataSource.swift */; };
+		D8D6295524969B2100694A6D /* ServiceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D6295424969B2100694A6D /* ServiceViewModel.swift */; };
+		D8D629582496A31600694A6D /* ServiceDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D629562496A31600694A6D /* ServiceDetailViewController.swift */; };
+		D8D629592496A31600694A6D /* ServiceDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8D629572496A31600694A6D /* ServiceDetailViewController.xib */; };
+		D8D6295C2496A3DA00694A6D /* ServiceDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D6295A2496A3DA00694A6D /* ServiceDetailTableViewCell.swift */; };
+		D8D6295D2496A3DA00694A6D /* ServiceDetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8D6295B2496A3DA00694A6D /* ServiceDetailTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -72,6 +81,15 @@
 		D8D6293324963B4C00694A6D /* StockDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StockDetailViewController.xib; sourceTree = "<group>"; };
 		D8D62939249642B700694A6D /* WorkDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkDetailViewController.swift; sourceTree = "<group>"; };
 		D8D6293A249642B700694A6D /* WorkDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WorkDetailViewController.xib; sourceTree = "<group>"; };
+		D8D6294C249694FC00694A6D /* ServicesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesTableViewCell.swift; sourceTree = "<group>"; };
+		D8D6294D249694FC00694A6D /* ServicesTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ServicesTableViewCell.xib; sourceTree = "<group>"; };
+		D8D629502496992200694A6D /* ServicesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesViewController.swift; sourceTree = "<group>"; };
+		D8D6295224969AEA00694A6D /* ServicesDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesDataSource.swift; sourceTree = "<group>"; };
+		D8D6295424969B2100694A6D /* ServiceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceViewModel.swift; sourceTree = "<group>"; };
+		D8D629562496A31600694A6D /* ServiceDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceDetailViewController.swift; sourceTree = "<group>"; };
+		D8D629572496A31600694A6D /* ServiceDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ServiceDetailViewController.xib; sourceTree = "<group>"; };
+		D8D6295A2496A3DA00694A6D /* ServiceDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceDetailTableViewCell.swift; sourceTree = "<group>"; };
+		D8D6295B2496A3DA00694A6D /* ServiceDetailTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ServiceDetailTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +124,7 @@
 			children = (
 				D8D6290D24960A6D00694A6D /* Fonts */,
 				D870BF192495FDCB00C740C1 /* Home */,
+				D8D629472496938700694A6D /* Services */,
 				D870BEFB2495EC9900C740C1 /* AppDelegate.swift */,
 				D870BEFD2495EC9900C740C1 /* SceneDelegate.swift */,
 				D870BEFF2495EC9900C740C1 /* ViewController.swift */,
@@ -169,6 +188,22 @@
 				D8D6292E249636BD00694A6D /* WorksDataSource.swift */,
 			);
 			path = DataSources;
+			sourceTree = "<group>";
+		};
+		D8D629472496938700694A6D /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				D8D6295424969B2100694A6D /* ServiceViewModel.swift */,
+				D8D6295224969AEA00694A6D /* ServicesDataSource.swift */,
+				D8D629502496992200694A6D /* ServicesViewController.swift */,
+				D8D6294C249694FC00694A6D /* ServicesTableViewCell.swift */,
+				D8D6294D249694FC00694A6D /* ServicesTableViewCell.xib */,
+				D8D629562496A31600694A6D /* ServiceDetailViewController.swift */,
+				D8D629572496A31600694A6D /* ServiceDetailViewController.xib */,
+				D8D6295A2496A3DA00694A6D /* ServiceDetailTableViewCell.swift */,
+				D8D6295B2496A3DA00694A6D /* ServiceDetailTableViewCell.xib */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -239,12 +274,15 @@
 				D870BF082495EC9A00C740C1 /* LaunchScreen.storyboard in Resources */,
 				D8D62925249631DC00694A6D /* WorkCollectionViewCell.xib in Resources */,
 				D870BF052495EC9A00C740C1 /* Assets.xcassets in Resources */,
+				D8D6295D2496A3DA00694A6D /* ServiceDetailTableViewCell.xib in Resources */,
 				D8D6293E2496495E00694A6D /* OpenSans-BoldItalic.ttf in Resources */,
 				D870BF032495EC9900C740C1 /* Main.storyboard in Resources */,
 				D8D629442496496E00694A6D /* OpenSans-Regular.ttf in Resources */,
+				D8D6294F249694FC00694A6D /* ServicesTableViewCell.xib in Resources */,
 				D870BF1D2495FDF500C740C1 /* StocksCollectionViewCell.xib in Resources */,
 				D8D629412496496500694A6D /* OpenSans-Italic.ttf in Resources */,
 				D8D629402496496400694A6D /* OpenSans-ExtraBoldItalic.ttf in Resources */,
+				D8D629592496A31600694A6D /* ServiceDetailViewController.xib in Resources */,
 				D8D6293F2496496200694A6D /* OpenSans-ExtraBold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -258,13 +296,19 @@
 			files = (
 				D8D6293424963B4C00694A6D /* StockDetailViewController.swift in Sources */,
 				D8D62924249631DC00694A6D /* WorkCollectionViewCell.swift in Sources */,
+				D8D6295324969AEA00694A6D /* ServicesDataSource.swift in Sources */,
 				D8D6293B249642B700694A6D /* WorkDetailViewController.swift in Sources */,
+				D8D629512496992200694A6D /* ServicesViewController.swift in Sources */,
+				D8D6295C2496A3DA00694A6D /* ServiceDetailTableViewCell.swift in Sources */,
+				D8D629582496A31600694A6D /* ServiceDetailViewController.swift in Sources */,
 				D870BF002495EC9900C740C1 /* ViewController.swift in Sources */,
+				D8D6295524969B2100694A6D /* ServiceViewModel.swift in Sources */,
 				D8D62929249633C900694A6D /* StocksDataSource.swift in Sources */,
 				D8D6293124963A2500694A6D /* StocksCollectionViewCell.swift in Sources */,
 				D870BEFC2495EC9900C740C1 /* AppDelegate.swift in Sources */,
 				D870BEFE2495EC9900C740C1 /* SceneDelegate.swift in Sources */,
 				D8D6292B2496343D00694A6D /* StockCellViewModel.swift in Sources */,
+				D8D6294E249694FC00694A6D /* ServicesTableViewCell.swift in Sources */,
 				D870BF182495F4C800C740C1 /* TabBarController.swift in Sources */,
 				D870BF162495F19B00C740C1 /* HomeViewController.swift in Sources */,
 				D8D6292F249636BD00694A6D /* WorksDataSource.swift in Sources */,
