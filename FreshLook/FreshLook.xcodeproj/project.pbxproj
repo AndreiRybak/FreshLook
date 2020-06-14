@@ -13,6 +13,30 @@
 		D870BF032495EC9900C740C1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D870BF012495EC9900C740C1 /* Main.storyboard */; };
 		D870BF052495EC9A00C740C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D870BF042495EC9A00C740C1 /* Assets.xcassets */; };
 		D870BF082495EC9A00C740C1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D870BF062495EC9A00C740C1 /* LaunchScreen.storyboard */; };
+		D870BF162495F19B00C740C1 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D870BF152495F19B00C740C1 /* HomeViewController.swift */; };
+		D870BF182495F4C800C740C1 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D870BF172495F4C800C740C1 /* TabBarController.swift */; };
+		D870BF1D2495FDF500C740C1 /* StocksCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D870BF1B2495FDF500C740C1 /* StocksCollectionViewCell.xib */; };
+		D8D62924249631DC00694A6D /* WorkCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D62922249631DC00694A6D /* WorkCollectionViewCell.swift */; };
+		D8D62925249631DC00694A6D /* WorkCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8D62923249631DC00694A6D /* WorkCollectionViewCell.xib */; };
+		D8D62929249633C900694A6D /* StocksDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D62928249633C900694A6D /* StocksDataSource.swift */; };
+		D8D6292B2496343D00694A6D /* StockCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D6292A2496343D00694A6D /* StockCellViewModel.swift */; };
+		D8D6292D2496350900694A6D /* WorkCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D6292C2496350900694A6D /* WorkCellViewModel.swift */; };
+		D8D6292F249636BD00694A6D /* WorksDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D6292E249636BD00694A6D /* WorksDataSource.swift */; };
+		D8D6293124963A2500694A6D /* StocksCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D6293024963A2500694A6D /* StocksCollectionViewCell.swift */; };
+		D8D6293424963B4C00694A6D /* StockDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D6293224963B4C00694A6D /* StockDetailViewController.swift */; };
+		D8D6293524963B4C00694A6D /* StockDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8D6293324963B4C00694A6D /* StockDetailViewController.xib */; };
+		D8D6293B249642B700694A6D /* WorkDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D62939249642B700694A6D /* WorkDetailViewController.swift */; };
+		D8D6293C249642B700694A6D /* WorkDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8D6293A249642B700694A6D /* WorkDetailViewController.xib */; };
+		D8D6293D2496495C00694A6D /* OpenSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D8D6291A2496157700694A6D /* OpenSans-Bold.ttf */; };
+		D8D6293E2496495E00694A6D /* OpenSans-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D8D6291D2496157800694A6D /* OpenSans-BoldItalic.ttf */; };
+		D8D6293F2496496200694A6D /* OpenSans-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D8D6291C2496157800694A6D /* OpenSans-ExtraBold.ttf */; };
+		D8D629402496496400694A6D /* OpenSans-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D8D629212496157800694A6D /* OpenSans-ExtraBoldItalic.ttf */; };
+		D8D629412496496500694A6D /* OpenSans-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D8D629192496157700694A6D /* OpenSans-Italic.ttf */; };
+		D8D629422496496700694A6D /* OpenSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D8D6291E2496157800694A6D /* OpenSans-Light.ttf */; };
+		D8D629432496496B00694A6D /* OpenSans-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D8D6291F2496157800694A6D /* OpenSans-LightItalic.ttf */; };
+		D8D629442496496E00694A6D /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D8D629202496157800694A6D /* OpenSans-Regular.ttf */; };
+		D8D629452496496F00694A6D /* OpenSans-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D8D629182496157700694A6D /* OpenSans-Semibold.ttf */; };
+		D8D629462496497100694A6D /* OpenSans-SemiboldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D8D6291B2496157700694A6D /* OpenSans-SemiboldItalic.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +48,30 @@
 		D870BF042495EC9A00C740C1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D870BF072495EC9A00C740C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D870BF092495EC9A00C740C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D870BF152495F19B00C740C1 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		D870BF172495F4C800C740C1 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		D870BF1B2495FDF500C740C1 /* StocksCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StocksCollectionViewCell.xib; sourceTree = "<group>"; };
+		D8D629182496157700694A6D /* OpenSans-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Semibold.ttf"; sourceTree = "<group>"; };
+		D8D629192496157700694A6D /* OpenSans-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Italic.ttf"; sourceTree = "<group>"; };
+		D8D6291A2496157700694A6D /* OpenSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Bold.ttf"; sourceTree = "<group>"; };
+		D8D6291B2496157700694A6D /* OpenSans-SemiboldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-SemiboldItalic.ttf"; sourceTree = "<group>"; };
+		D8D6291C2496157800694A6D /* OpenSans-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-ExtraBold.ttf"; sourceTree = "<group>"; };
+		D8D6291D2496157800694A6D /* OpenSans-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-BoldItalic.ttf"; sourceTree = "<group>"; };
+		D8D6291E2496157800694A6D /* OpenSans-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Light.ttf"; sourceTree = "<group>"; };
+		D8D6291F2496157800694A6D /* OpenSans-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-LightItalic.ttf"; sourceTree = "<group>"; };
+		D8D629202496157800694A6D /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Regular.ttf"; sourceTree = "<group>"; };
+		D8D629212496157800694A6D /* OpenSans-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		D8D62922249631DC00694A6D /* WorkCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkCollectionViewCell.swift; sourceTree = "<group>"; };
+		D8D62923249631DC00694A6D /* WorkCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WorkCollectionViewCell.xib; sourceTree = "<group>"; };
+		D8D62928249633C900694A6D /* StocksDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StocksDataSource.swift; sourceTree = "<group>"; };
+		D8D6292A2496343D00694A6D /* StockCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockCellViewModel.swift; sourceTree = "<group>"; };
+		D8D6292C2496350900694A6D /* WorkCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkCellViewModel.swift; sourceTree = "<group>"; };
+		D8D6292E249636BD00694A6D /* WorksDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorksDataSource.swift; sourceTree = "<group>"; };
+		D8D6293024963A2500694A6D /* StocksCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StocksCollectionViewCell.swift; sourceTree = "<group>"; };
+		D8D6293224963B4C00694A6D /* StockDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockDetailViewController.swift; sourceTree = "<group>"; };
+		D8D6293324963B4C00694A6D /* StockDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StockDetailViewController.xib; sourceTree = "<group>"; };
+		D8D62939249642B700694A6D /* WorkDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkDetailViewController.swift; sourceTree = "<group>"; };
+		D8D6293A249642B700694A6D /* WorkDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WorkDetailViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +104,8 @@
 		D870BEFA2495EC9900C740C1 /* FreshLook */ = {
 			isa = PBXGroup;
 			children = (
+				D8D6290D24960A6D00694A6D /* Fonts */,
+				D870BF192495FDCB00C740C1 /* Home */,
 				D870BEFB2495EC9900C740C1 /* AppDelegate.swift */,
 				D870BEFD2495EC9900C740C1 /* SceneDelegate.swift */,
 				D870BEFF2495EC9900C740C1 /* ViewController.swift */,
@@ -63,8 +113,62 @@
 				D870BF042495EC9A00C740C1 /* Assets.xcassets */,
 				D870BF062495EC9A00C740C1 /* LaunchScreen.storyboard */,
 				D870BF092495EC9A00C740C1 /* Info.plist */,
+				D870BF172495F4C800C740C1 /* TabBarController.swift */,
 			);
 			path = FreshLook;
+			sourceTree = "<group>";
+		};
+		D870BF192495FDCB00C740C1 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				D8D62927249633BB00694A6D /* DataSources */,
+				D8D62926249631E000694A6D /* Cells */,
+				D870BF152495F19B00C740C1 /* HomeViewController.swift */,
+				D8D6293224963B4C00694A6D /* StockDetailViewController.swift */,
+				D8D6293324963B4C00694A6D /* StockDetailViewController.xib */,
+				D8D62939249642B700694A6D /* WorkDetailViewController.swift */,
+				D8D6293A249642B700694A6D /* WorkDetailViewController.xib */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		D8D6290D24960A6D00694A6D /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				D8D6291A2496157700694A6D /* OpenSans-Bold.ttf */,
+				D8D6291D2496157800694A6D /* OpenSans-BoldItalic.ttf */,
+				D8D6291C2496157800694A6D /* OpenSans-ExtraBold.ttf */,
+				D8D629212496157800694A6D /* OpenSans-ExtraBoldItalic.ttf */,
+				D8D629192496157700694A6D /* OpenSans-Italic.ttf */,
+				D8D6291E2496157800694A6D /* OpenSans-Light.ttf */,
+				D8D6291F2496157800694A6D /* OpenSans-LightItalic.ttf */,
+				D8D629202496157800694A6D /* OpenSans-Regular.ttf */,
+				D8D629182496157700694A6D /* OpenSans-Semibold.ttf */,
+				D8D6291B2496157700694A6D /* OpenSans-SemiboldItalic.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		D8D62926249631E000694A6D /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				D8D6292A2496343D00694A6D /* StockCellViewModel.swift */,
+				D8D6293024963A2500694A6D /* StocksCollectionViewCell.swift */,
+				D870BF1B2495FDF500C740C1 /* StocksCollectionViewCell.xib */,
+				D8D6292C2496350900694A6D /* WorkCellViewModel.swift */,
+				D8D62922249631DC00694A6D /* WorkCollectionViewCell.swift */,
+				D8D62923249631DC00694A6D /* WorkCollectionViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		D8D62927249633BB00694A6D /* DataSources */ = {
+			isa = PBXGroup;
+			children = (
+				D8D62928249633C900694A6D /* StocksDataSource.swift */,
+				D8D6292E249636BD00694A6D /* WorksDataSource.swift */,
+			);
+			path = DataSources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,9 +229,23 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8D629422496496700694A6D /* OpenSans-Light.ttf in Resources */,
+				D8D6293C249642B700694A6D /* WorkDetailViewController.xib in Resources */,
+				D8D629432496496B00694A6D /* OpenSans-LightItalic.ttf in Resources */,
+				D8D6293524963B4C00694A6D /* StockDetailViewController.xib in Resources */,
+				D8D629452496496F00694A6D /* OpenSans-Semibold.ttf in Resources */,
+				D8D629462496497100694A6D /* OpenSans-SemiboldItalic.ttf in Resources */,
+				D8D6293D2496495C00694A6D /* OpenSans-Bold.ttf in Resources */,
 				D870BF082495EC9A00C740C1 /* LaunchScreen.storyboard in Resources */,
+				D8D62925249631DC00694A6D /* WorkCollectionViewCell.xib in Resources */,
 				D870BF052495EC9A00C740C1 /* Assets.xcassets in Resources */,
+				D8D6293E2496495E00694A6D /* OpenSans-BoldItalic.ttf in Resources */,
 				D870BF032495EC9900C740C1 /* Main.storyboard in Resources */,
+				D8D629442496496E00694A6D /* OpenSans-Regular.ttf in Resources */,
+				D870BF1D2495FDF500C740C1 /* StocksCollectionViewCell.xib in Resources */,
+				D8D629412496496500694A6D /* OpenSans-Italic.ttf in Resources */,
+				D8D629402496496400694A6D /* OpenSans-ExtraBoldItalic.ttf in Resources */,
+				D8D6293F2496496200694A6D /* OpenSans-ExtraBold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,9 +256,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8D6293424963B4C00694A6D /* StockDetailViewController.swift in Sources */,
+				D8D62924249631DC00694A6D /* WorkCollectionViewCell.swift in Sources */,
+				D8D6293B249642B700694A6D /* WorkDetailViewController.swift in Sources */,
 				D870BF002495EC9900C740C1 /* ViewController.swift in Sources */,
+				D8D62929249633C900694A6D /* StocksDataSource.swift in Sources */,
+				D8D6293124963A2500694A6D /* StocksCollectionViewCell.swift in Sources */,
 				D870BEFC2495EC9900C740C1 /* AppDelegate.swift in Sources */,
 				D870BEFE2495EC9900C740C1 /* SceneDelegate.swift in Sources */,
+				D8D6292B2496343D00694A6D /* StockCellViewModel.swift in Sources */,
+				D870BF182495F4C800C740C1 /* TabBarController.swift in Sources */,
+				D870BF162495F19B00C740C1 /* HomeViewController.swift in Sources */,
+				D8D6292F249636BD00694A6D /* WorksDataSource.swift in Sources */,
+				D8D6292D2496350900694A6D /* WorkCellViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
