@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D86881572497CE6600BA8A08 /* BasketViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86881562497CE6600BA8A08 /* BasketViewModel.swift */; };
+		D868815A2497D37D00BA8A08 /* BasketTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86881582497D37D00BA8A08 /* BasketTableViewCell.swift */; };
+		D868815B2497D37D00BA8A08 /* BasketTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D86881592497D37D00BA8A08 /* BasketTableViewCell.xib */; };
 		D870BEFC2495EC9900C740C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D870BEFB2495EC9900C740C1 /* AppDelegate.swift */; };
 		D870BEFE2495EC9900C740C1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D870BEFD2495EC9900C740C1 /* SceneDelegate.swift */; };
 		D870BF002495EC9900C740C1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D870BEFF2495EC9900C740C1 /* ViewController.swift */; };
@@ -46,9 +49,14 @@
 		D8D629592496A31600694A6D /* ServiceDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8D629572496A31600694A6D /* ServiceDetailViewController.xib */; };
 		D8D6295C2496A3DA00694A6D /* ServiceDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D6295A2496A3DA00694A6D /* ServiceDetailTableViewCell.swift */; };
 		D8D6295D2496A3DA00694A6D /* ServiceDetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8D6295B2496A3DA00694A6D /* ServiceDetailTableViewCell.xib */; };
+		D8D629622497BC9B00694A6D /* BasketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D629612497BC9B00694A6D /* BasketViewController.swift */; };
+		D8D629652497C8FE00694A6D /* UserDefaults + Basket.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D629642497C8FE00694A6D /* UserDefaults + Basket.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D86881562497CE6600BA8A08 /* BasketViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketViewModel.swift; sourceTree = "<group>"; };
+		D86881582497D37D00BA8A08 /* BasketTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketTableViewCell.swift; sourceTree = "<group>"; };
+		D86881592497D37D00BA8A08 /* BasketTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BasketTableViewCell.xib; sourceTree = "<group>"; };
 		D870BEF82495EC9900C740C1 /* FreshLook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FreshLook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D870BEFB2495EC9900C740C1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D870BEFD2495EC9900C740C1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -90,6 +98,8 @@
 		D8D629572496A31600694A6D /* ServiceDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ServiceDetailViewController.xib; sourceTree = "<group>"; };
 		D8D6295A2496A3DA00694A6D /* ServiceDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceDetailTableViewCell.swift; sourceTree = "<group>"; };
 		D8D6295B2496A3DA00694A6D /* ServiceDetailTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ServiceDetailTableViewCell.xib; sourceTree = "<group>"; };
+		D8D629612497BC9B00694A6D /* BasketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketViewController.swift; sourceTree = "<group>"; };
+		D8D629642497C8FE00694A6D /* UserDefaults + Basket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults + Basket.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,9 +132,11 @@
 		D870BEFA2495EC9900C740C1 /* FreshLook */ = {
 			isa = PBXGroup;
 			children = (
+				D8D629632497C8E600694A6D /* Extensions */,
 				D8D6290D24960A6D00694A6D /* Fonts */,
 				D870BF192495FDCB00C740C1 /* Home */,
 				D8D629472496938700694A6D /* Services */,
+				D8D629602497BB6900694A6D /* Basket */,
 				D870BEFB2495EC9900C740C1 /* AppDelegate.swift */,
 				D870BEFD2495EC9900C740C1 /* SceneDelegate.swift */,
 				D870BEFF2495EC9900C740C1 /* ViewController.swift */,
@@ -193,17 +205,52 @@
 		D8D629472496938700694A6D /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				D8D6295E2497BAAA00694A6D /* DataSources */,
+				D8D6295F2497BAC200694A6D /* Cells */,
 				D8D6295424969B2100694A6D /* ServiceViewModel.swift */,
-				D8D6295224969AEA00694A6D /* ServicesDataSource.swift */,
 				D8D629502496992200694A6D /* ServicesViewController.swift */,
-				D8D6294C249694FC00694A6D /* ServicesTableViewCell.swift */,
-				D8D6294D249694FC00694A6D /* ServicesTableViewCell.xib */,
 				D8D629562496A31600694A6D /* ServiceDetailViewController.swift */,
 				D8D629572496A31600694A6D /* ServiceDetailViewController.xib */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		D8D6295E2497BAAA00694A6D /* DataSources */ = {
+			isa = PBXGroup;
+			children = (
+				D8D6295224969AEA00694A6D /* ServicesDataSource.swift */,
+			);
+			path = DataSources;
+			sourceTree = "<group>";
+		};
+		D8D6295F2497BAC200694A6D /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				D8D6294C249694FC00694A6D /* ServicesTableViewCell.swift */,
+				D8D6294D249694FC00694A6D /* ServicesTableViewCell.xib */,
 				D8D6295A2496A3DA00694A6D /* ServiceDetailTableViewCell.swift */,
 				D8D6295B2496A3DA00694A6D /* ServiceDetailTableViewCell.xib */,
 			);
-			path = Services;
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		D8D629602497BB6900694A6D /* Basket */ = {
+			isa = PBXGroup;
+			children = (
+				D86881562497CE6600BA8A08 /* BasketViewModel.swift */,
+				D8D629612497BC9B00694A6D /* BasketViewController.swift */,
+				D86881582497D37D00BA8A08 /* BasketTableViewCell.swift */,
+				D86881592497D37D00BA8A08 /* BasketTableViewCell.xib */,
+			);
+			path = Basket;
+			sourceTree = "<group>";
+		};
+		D8D629632497C8E600694A6D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D8D629642497C8FE00694A6D /* UserDefaults + Basket.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -267,6 +314,7 @@
 				D8D629422496496700694A6D /* OpenSans-Light.ttf in Resources */,
 				D8D6293C249642B700694A6D /* WorkDetailViewController.xib in Resources */,
 				D8D629432496496B00694A6D /* OpenSans-LightItalic.ttf in Resources */,
+				D868815B2497D37D00BA8A08 /* BasketTableViewCell.xib in Resources */,
 				D8D6293524963B4C00694A6D /* StockDetailViewController.xib in Resources */,
 				D8D629452496496F00694A6D /* OpenSans-Semibold.ttf in Resources */,
 				D8D629462496497100694A6D /* OpenSans-SemiboldItalic.ttf in Resources */,
@@ -298,16 +346,20 @@
 				D8D62924249631DC00694A6D /* WorkCollectionViewCell.swift in Sources */,
 				D8D6295324969AEA00694A6D /* ServicesDataSource.swift in Sources */,
 				D8D6293B249642B700694A6D /* WorkDetailViewController.swift in Sources */,
+				D86881572497CE6600BA8A08 /* BasketViewModel.swift in Sources */,
+				D8D629652497C8FE00694A6D /* UserDefaults + Basket.swift in Sources */,
 				D8D629512496992200694A6D /* ServicesViewController.swift in Sources */,
 				D8D6295C2496A3DA00694A6D /* ServiceDetailTableViewCell.swift in Sources */,
 				D8D629582496A31600694A6D /* ServiceDetailViewController.swift in Sources */,
 				D870BF002495EC9900C740C1 /* ViewController.swift in Sources */,
 				D8D6295524969B2100694A6D /* ServiceViewModel.swift in Sources */,
 				D8D62929249633C900694A6D /* StocksDataSource.swift in Sources */,
+				D8D629622497BC9B00694A6D /* BasketViewController.swift in Sources */,
 				D8D6293124963A2500694A6D /* StocksCollectionViewCell.swift in Sources */,
 				D870BEFC2495EC9900C740C1 /* AppDelegate.swift in Sources */,
 				D870BEFE2495EC9900C740C1 /* SceneDelegate.swift in Sources */,
 				D8D6292B2496343D00694A6D /* StockCellViewModel.swift in Sources */,
+				D868815A2497D37D00BA8A08 /* BasketTableViewCell.swift in Sources */,
 				D8D6294E249694FC00694A6D /* ServicesTableViewCell.swift in Sources */,
 				D870BF182495F4C800C740C1 /* TabBarController.swift in Sources */,
 				D870BF162495F19B00C740C1 /* HomeViewController.swift in Sources */,

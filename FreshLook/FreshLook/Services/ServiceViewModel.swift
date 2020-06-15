@@ -9,7 +9,15 @@
 import Foundation
 import UIKit
 
-struct Service {
+public enum ServiceTypeConst {
+    static let sneakers = "sneakers"
+    static let formalShoes = "formalShoes"
+    static let winterBoots = "winterBoots"
+    static let ugg = "ugg"
+}
+
+struct Service: Codable {
+    var type: String
     var title: String
     var description: String
     var price: Double

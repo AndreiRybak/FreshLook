@@ -13,7 +13,9 @@ class ServiceDetailTableViewCell: UITableViewCell {
     @IBOutlet private weak var title: UILabel!
     @IBOutlet private weak var priceLabel: UILabel!
     @IBOutlet private weak var descriptionLabel: UILabel!
-    
+
+    private var service: Service?
+
     override func awakeFromNib() {
         super.awakeFromNib()
     }
@@ -30,6 +32,8 @@ class ServiceDetailTableViewCell: UITableViewCell {
     }
 
     func configure(service: Service) {
+        self.service = service
+
         title.text = service.title
         if service.isFinalPrice {
             priceLabel.text = "\(service.price) р."
@@ -38,5 +42,12 @@ class ServiceDetailTableViewCell: UITableViewCell {
         }
         descriptionLabel.text = service.description
     }
-    
+
+    @IBAction func addToBasketButtonPressed(_ sender: Any) {
+        guard let service = service else {
+            return
+        }
+        UserDefaults.standard.save(services: [service])
+    }
+
 }

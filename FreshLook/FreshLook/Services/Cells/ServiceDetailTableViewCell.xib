@@ -42,25 +42,29 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="basketAction" translatesAutoresizingMaskIntoConstraints="NO" id="qqJ-0L-0Bm">
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KHL-Uo-B1O">
                         <rect key="frame" x="304" y="51.5" width="30" height="30"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="30" id="YTE-7p-zsq"/>
-                            <constraint firstAttribute="height" constant="30" id="uNg-6v-gtg"/>
+                            <constraint firstAttribute="width" constant="30" id="JSX-F1-CsA"/>
+                            <constraint firstAttribute="height" constant="30" id="Nb3-sm-wzi"/>
                         </constraints>
-                    </imageView>
+                        <state key="normal" image="basketAction"/>
+                        <connections>
+                            <action selector="addToBasketButtonPressed:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Mjv-9D-94g"/>
+                        </connections>
+                    </button>
                 </subviews>
                 <constraints>
                     <constraint firstItem="JGh-VD-Oz2" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="hU1-qK-mbA" secondAttribute="trailing" constant="16" id="0JS-Yy-Ob4"/>
                     <constraint firstItem="KIf-cC-V49" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="5YY-22-y2W"/>
-                    <constraint firstAttribute="trailing" secondItem="qqJ-0L-0Bm" secondAttribute="trailing" constant="16" id="Ajk-ms-alY"/>
                     <constraint firstItem="hU1-qK-mbA" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="BeH-pG-r7g"/>
-                    <constraint firstItem="qqJ-0L-0Bm" firstAttribute="top" secondItem="JGh-VD-Oz2" secondAttribute="bottom" constant="24" id="KXm-eJ-cMN"/>
-                    <constraint firstItem="qqJ-0L-0Bm" firstAttribute="leading" secondItem="KIf-cC-V49" secondAttribute="trailing" constant="37" id="KfB-Fo-acb"/>
                     <constraint firstAttribute="trailing" secondItem="JGh-VD-Oz2" secondAttribute="trailing" constant="16" id="YWA-kW-ctc"/>
                     <constraint firstItem="KIf-cC-V49" firstAttribute="top" secondItem="hU1-qK-mbA" secondAttribute="bottom" constant="4" id="gYV-Qs-7hX"/>
                     <constraint firstAttribute="bottom" secondItem="KIf-cC-V49" secondAttribute="bottom" constant="8" id="jbb-zs-b1L"/>
                     <constraint firstItem="hU1-qK-mbA" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="jsq-3F-sHT"/>
+                    <constraint firstAttribute="trailing" secondItem="KHL-Uo-B1O" secondAttribute="trailing" constant="16" id="mLD-5h-k7o"/>
+                    <constraint firstItem="KHL-Uo-B1O" firstAttribute="top" secondItem="JGh-VD-Oz2" secondAttribute="bottom" constant="24" id="qeA-Gq-Zdo"/>
+                    <constraint firstItem="KHL-Uo-B1O" firstAttribute="leading" secondItem="KIf-cC-V49" secondAttribute="trailing" constant="37" id="s0O-5o-Jf0"/>
                     <constraint firstItem="JGh-VD-Oz2" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="tjd-JL-Acz"/>
                 </constraints>
             </tableViewCellContentView>
