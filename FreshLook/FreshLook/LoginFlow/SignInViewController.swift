@@ -20,11 +20,8 @@ class SignInViewController: UIViewController {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let vc = storyboard.instantiateViewController(withIdentifier: "TabBarController")
         UserDefaults.standard.setValue(true, forKey: "isLoggedIn")
-        self.navigationController?.pushViewController(vc, animated: true)
-        var navigationArray = self.navigationController?.viewControllers
-        navigationArray?.removeFirst()
-        navigationArray?.removeFirst()
-        self.navigationController?.viewControllers = navigationArray ?? []
+        UIApplication.shared.keyWindow?.rootViewController = vc
+        UIApplication.shared.keyWindow?.makeKeyAndVisible()
     }
     
 }
