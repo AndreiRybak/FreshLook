@@ -29,7 +29,7 @@ class WorkDetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationController?.setNavigationBarHidden(false, animated: false)
-        self.navigationItem.title = "Галерея абот"
+        self.navigationItem.title = "Галерея работ"
         bindWithViewModel()
     }
 

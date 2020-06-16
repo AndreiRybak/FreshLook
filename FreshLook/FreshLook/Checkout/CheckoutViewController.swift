@@ -8,6 +8,12 @@
 
 import UIKit
 
+protocol CheckoutCellDelegate: class {
+    func typeButtonWasPressed(service: Service, completion: @escaping (String?) -> Void)
+    func materialButtonWasPressed(service: Service, completion:  @escaping (String?) -> Void)
+    func addPhotoButtonWasPressed(service: Service, completion: () -> Void)
+}
+
 class CheckoutViewController: UIViewController {
 
     @IBOutlet private weak var tableView: UITableView!
@@ -28,12 +34,18 @@ class CheckoutViewController: UIViewController {
         super.viewDidLoad()
         self.navigationItem.title = "Оформление заказа"
         tableView.register(UINib.init(nibName: "CheckoutTableViewCell", bundle: nil), forCellReuseIdentifier: "checkoutCell")
+        let nextButton = UIBarButtonItem(title: "Далее", style: .plain, target: self, action: #selector(nextButtonTapped))
+        nextButton.tintColor = .black
+        navigationItem.rightBarButtonItem = nextButton
     }
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
     }
 
+    @objc private func nextButtonTapped() {
+        print()
+    }
 }
 
 extension CheckoutViewController: UITableViewDataSource {
@@ -45,6 +57,7 @@ extension CheckoutViewController: UITableViewDataSource {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "checkoutCell", for: indexPath) as? CheckoutTableViewCell else {
             return UITableViewCell()
         }
+        cell.delegate = self
         cell.configure(service: services[indexPath.row])
         return cell
     }
@@ -55,5 +68,54 @@ extension CheckoutViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 348
     }
+}
+
+extension CheckoutViewController: CheckoutCellDelegate {
+    func typeButtonWasPressed(service: Service, completion: @escaping (String?) -> Void) {
+        let actionSheet = UIAlertController(title: "Тип обуви", message: "Выберите тип обуви", preferredStyle: .actionSheet)
+        let firstAction = UIAlertAction(title: "Кроссовки", style: .default) { _ in
+            completion("Кроссовки")
+        }
+        let secondAction = UIAlertAction(title: "Кеды", style: .default) { _ in
+            completion("Кеды")
+        }
+        let cancelAction = UIAlertAction(title: "Отмена", style: .destructive) { _ in
+            completion(nil)
+        }
+        actionSheet.addAction(firstAction)
+        actionSheet.addAction(secondAction)
+        actionSheet.addAction(cancelAction)
+        self.present(actionSheet, animated: true, completion: nil)
+    }
+
+    func materialButtonWasPressed(service: Service, completion:  @escaping (String?) -> Void) {
+        let actionSheet = UIAlertController(title: "Тип обуви", message: "Выберите тип обуви", preferredStyle: .actionSheet)
+        let firstAction = UIAlertAction(title: "Замша", style: .default) { _ in
+            completion("Замша")
+        }
+        let secondAction = UIAlertAction(title: "Кожа", style: .default) { _ in
+            completion("Кожа")
+        }
+        let thirdAction = UIAlertAction(title: "Ткань", style: .default) { _ in
+            completion("Ткань")
+        }
+        let fourthAction = UIAlertAction(title: "Нубук", style: .default) { _ in
+            completion("Нубук")
+        }
+        let cancelAction = UIAlertAction(title: "Отмена", style: .destructive) { _ in
+            completion(nil)
+        }
+        actionSheet.addAction(firstAction)
+        actionSheet.addAction(secondAction)
+        actionSheet.addAction(thirdAction)
+        actionSheet.addAction(fourthAction)
+        actionSheet.addAction(cancelAction)
+        self.present(actionSheet, animated: true, completion: nil)
+    }
+
+    func addPhotoButtonWasPressed(service: Service, completion: () -> Void) {
+
+    }
+
 
 }
