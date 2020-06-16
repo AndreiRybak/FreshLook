@@ -40,5 +40,6 @@ class WorkDetailViewController: UIViewController {
     }
 
     @IBAction func orderButtonWasPressed(_ sender: Any) {
+        self.tabBarController?.selectedIndex = 1
     }
 }

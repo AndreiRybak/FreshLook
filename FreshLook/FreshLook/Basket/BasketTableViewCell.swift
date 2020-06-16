@@ -48,7 +48,7 @@ class BasketTableViewCell: UITableViewCell {
         }
         countLabel.text = "\(count)"
         let finalPrice = service.price * Double(count)
-        priceLabel.text = "\(finalPrice) р."
+        priceLabel.text = "\(Int(finalPrice)) р."
     }
 
     @IBAction func deleteButtonWasPressed(_ sender: Any) {

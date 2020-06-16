@@ -78,11 +78,22 @@ class BasketViewController: UIViewController {
         preFinalPriceLabel.text = "\(finalPrice) р."
         finalPriceLabel.text = "\(finalPrice) р."
     }
+
+    @IBAction func orderButtonWasPressed(_ sender: Any) {
+        guard let allServices = UserDefaults.standard.getStoredServices() else {
+            return
+        }
+        let checkoutViewController = CheckoutViewController(services: allServices)
+        navigationController?.pushViewController(checkoutViewController, animated: true)
+    }
+
+    @IBAction func goToServicesButtonPressed(_ sender: Any) {
+        tabBarController?.selectedIndex = 1
+    }
 }
 
 extension BasketViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        print(viewModel.numberOfItems)
         return viewModel.numberOfItems
     }
 

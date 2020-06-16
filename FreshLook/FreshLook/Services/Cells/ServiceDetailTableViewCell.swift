@@ -36,9 +36,9 @@ class ServiceDetailTableViewCell: UITableViewCell {
 
         title.text = service.title
         if service.isFinalPrice {
-            priceLabel.text = "\(service.price) р."
+            priceLabel.text = "\(Int(service.price)) р."
         } else {
-            priceLabel.text = "от \(service.price) р."
+            priceLabel.text = "от \(Int(service.price)) р."
         }
         descriptionLabel.text = service.description
     }

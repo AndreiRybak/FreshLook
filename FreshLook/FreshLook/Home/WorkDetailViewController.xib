@@ -59,7 +59,7 @@
                         <constraint firstAttribute="height" constant="48" id="bld-No-rcm"/>
                     </constraints>
                     <fontDescription key="fontDescription" name="OpenSans-Semibold" family="Open Sans" pointSize="16"/>
-                    <state key="normal" title="ОФОРМИТЬ ЗАКАЗ">
+                    <state key="normal" title="ПЕРЕЙТИ К УСЛУГАМ">
                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </state>
                     <connections>

@@ -13,11 +13,11 @@ class WorksDataSource {
 
     let works = [
         WorkCellViewModel(
-            workName: "Комплекс Fresh Nubuck + Покраска",
+            workName: "Комплекс Fresh Nubuck+",
             workDescription: "- первичная чистка от загрязнений\n- глубокая чистка подошвы\n- чистка \"mid sole\"\n- глубокая машинная чистка ткани верха\n- стирка шнурков\n- удаление катышков\n- покраска\n- сушка",
             image: UIImage(named: "work1") ?? UIImage()),
         WorkCellViewModel(
-            workName: "Комплекс Fresh Nubuck + Покраска",
+            workName: "Комплекс Fresh Nubuck+",
             workDescription: "- первичная чистка от загрязнений\n- глубокая чистка подошвы\n- чистка \"mid sole\"\n- глубокая машинная чистка ткани верха\n- стирка шнурков\n- удаление катышков\n- покраска\n- сушка",
             image: UIImage(named: "work2") ?? UIImage())
     ]
