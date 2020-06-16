@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D82F57D224993DB300631A35 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82F57D024993DB300631A35 /* LoginViewController.swift */; };
+		D82F57D324993DB300631A35 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D82F57D124993DB300631A35 /* LoginViewController.xib */; };
+		D82F57D624993FFA00631A35 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82F57D424993FFA00631A35 /* SignInViewController.swift */; };
+		D82F57D724993FFA00631A35 /* SignInViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D82F57D524993FFA00631A35 /* SignInViewController.xib */; };
 		D86881572497CE6600BA8A08 /* BasketViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86881562497CE6600BA8A08 /* BasketViewModel.swift */; };
 		D868815A2497D37D00BA8A08 /* BasketTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86881582497D37D00BA8A08 /* BasketTableViewCell.swift */; };
 		D868815B2497D37D00BA8A08 /* BasketTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D86881592497D37D00BA8A08 /* BasketTableViewCell.xib */; };
@@ -58,6 +62,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D82F57D024993DB300631A35 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		D82F57D124993DB300631A35 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		D82F57D424993FFA00631A35 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		D82F57D524993FFA00631A35 /* SignInViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignInViewController.xib; sourceTree = "<group>"; };
 		D86881562497CE6600BA8A08 /* BasketViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketViewModel.swift; sourceTree = "<group>"; };
 		D86881582497D37D00BA8A08 /* BasketTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketTableViewCell.swift; sourceTree = "<group>"; };
 		D86881592497D37D00BA8A08 /* BasketTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BasketTableViewCell.xib; sourceTree = "<group>"; };
@@ -121,6 +129,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D82F57CF24993D9200631A35 /* LoginFlow */ = {
+			isa = PBXGroup;
+			children = (
+				D82F57D024993DB300631A35 /* LoginViewController.swift */,
+				D82F57D124993DB300631A35 /* LoginViewController.xib */,
+				D82F57D424993FFA00631A35 /* SignInViewController.swift */,
+				D82F57D524993FFA00631A35 /* SignInViewController.xib */,
+			);
+			path = LoginFlow;
+			sourceTree = "<group>";
+		};
 		D868815C24991AC500BA8A08 /* Checkout */ = {
 			isa = PBXGroup;
 			children = (
@@ -151,6 +170,7 @@
 		D870BEFA2495EC9900C740C1 /* FreshLook */ = {
 			isa = PBXGroup;
 			children = (
+				D82F57CF24993D9200631A35 /* LoginFlow */,
 				D8D629632497C8E600694A6D /* Extensions */,
 				D8D6290D24960A6D00694A6D /* Fonts */,
 				D870BF192495FDCB00C740C1 /* Home */,
@@ -331,6 +351,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D82F57D724993FFA00631A35 /* SignInViewController.xib in Resources */,
 				D868816024991AF600BA8A08 /* CheckoutViewController.xib in Resources */,
 				D8D629422496496700694A6D /* OpenSans-Light.ttf in Resources */,
 				D868816424991C6300BA8A08 /* CheckoutTableViewCell.xib in Resources */,
@@ -339,6 +360,7 @@
 				D868815B2497D37D00BA8A08 /* BasketTableViewCell.xib in Resources */,
 				D8D6293524963B4C00694A6D /* StockDetailViewController.xib in Resources */,
 				D8D629452496496F00694A6D /* OpenSans-Semibold.ttf in Resources */,
+				D82F57D324993DB300631A35 /* LoginViewController.xib in Resources */,
 				D8D629462496497100694A6D /* OpenSans-SemiboldItalic.ttf in Resources */,
 				D8D6293D2496495C00694A6D /* OpenSans-Bold.ttf in Resources */,
 				D870BF082495EC9A00C740C1 /* LaunchScreen.storyboard in Resources */,
@@ -378,6 +400,7 @@
 				D8D6295524969B2100694A6D /* ServiceViewModel.swift in Sources */,
 				D8D62929249633C900694A6D /* StocksDataSource.swift in Sources */,
 				D8D629622497BC9B00694A6D /* BasketViewController.swift in Sources */,
+				D82F57D624993FFA00631A35 /* SignInViewController.swift in Sources */,
 				D8D6293124963A2500694A6D /* StocksCollectionViewCell.swift in Sources */,
 				D870BEFC2495EC9900C740C1 /* AppDelegate.swift in Sources */,
 				D870BEFE2495EC9900C740C1 /* SceneDelegate.swift in Sources */,
@@ -388,6 +411,7 @@
 				D870BF162495F19B00C740C1 /* HomeViewController.swift in Sources */,
 				D8D6292F249636BD00694A6D /* WorksDataSource.swift in Sources */,
 				D868816324991C6300BA8A08 /* CheckoutTableViewCell.swift in Sources */,
+				D82F57D224993DB300631A35 /* LoginViewController.swift in Sources */,
 				D8D6292D2496350900694A6D /* WorkCellViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

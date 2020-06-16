@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="OpenSans-Semibold.ttf">
+            <string>OpenSans-Semibold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController" customModule="FreshLook" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="loginLogo" translatesAutoresizingMaskIntoConstraints="NO" id="wjf-Lk-Y8u">
+                    <rect key="frame" x="41" y="44" width="332" height="450"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="450" id="aKR-qD-Shi"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4uN-vv-Ro7">
+                    <rect key="frame" x="16" y="494" width="382" height="48"/>
+                    <color key="backgroundColor" red="0.2666666667" green="0.57254901960000004" blue="0.59215686270000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="48" id="2Rd-tM-hVm"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="OpenSans-Semibold" family="Open Sans" pointSize="16"/>
+                    <state key="normal" title="РЕГИСТРАЦИЯ">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6QA-By-T3V">
+                    <rect key="frame" x="16" y="554" width="382" height="48"/>
+                    <color key="backgroundColor" red="0.50980392159999999" green="0.50980392159999999" blue="0.50980392159999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="48" id="AYu-AA-cmQ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="OpenSans-Semibold" family="Open Sans" pointSize="16"/>
+                    <state key="normal" title="ВХОД">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="signInButtonWasPressed:" destination="-1" eventType="touchUpInside" id="ewC-bp-QPK"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="— Войти через —" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ctn-Lx-Smv">
+                    <rect key="frame" x="135.5" y="642" width="143" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="google" translatesAutoresizingMaskIntoConstraints="NO" id="GHy-xs-VEy">
+                    <rect key="frame" x="187" y="680" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="40" id="BBU-5t-SFj"/>
+                        <constraint firstAttribute="height" constant="40" id="o9s-da-Ufn"/>
+                    </constraints>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="vk" translatesAutoresizingMaskIntoConstraints="NO" id="0qr-Bg-O5K">
+                    <rect key="frame" x="127" y="680" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="9U1-hE-6AR"/>
+                        <constraint firstAttribute="width" constant="40" id="Ya2-Fk-CJz"/>
+                    </constraints>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="facebook" translatesAutoresizingMaskIntoConstraints="NO" id="uYl-bR-QjR">
+                    <rect key="frame" x="247" y="680" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="J88-x0-s8O"/>
+                        <constraint firstAttribute="width" constant="40" id="bV2-Sa-Ko3"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="4uN-vv-Ro7" firstAttribute="top" secondItem="wjf-Lk-Y8u" secondAttribute="bottom" id="Ajk-Bx-WOU"/>
+                <constraint firstItem="Ctn-Lx-Smv" firstAttribute="top" secondItem="6QA-By-T3V" secondAttribute="bottom" constant="40" id="EDY-NU-UeM"/>
+                <constraint firstItem="GHy-xs-VEy" firstAttribute="top" secondItem="Ctn-Lx-Smv" secondAttribute="bottom" constant="17" id="Gak-5e-eUm"/>
+                <constraint firstItem="6QA-By-T3V" firstAttribute="top" secondItem="4uN-vv-Ro7" secondAttribute="bottom" constant="12" id="UZI-lh-Wp7"/>
+                <constraint firstItem="wjf-Lk-Y8u" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="WNp-9H-XmL"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="4uN-vv-Ro7" secondAttribute="trailing" constant="16" id="Y7r-fH-Z8q"/>
+                <constraint firstItem="6QA-By-T3V" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="bMd-eo-dy6"/>
+                <constraint firstItem="wjf-Lk-Y8u" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="41" id="fmh-56-j0L"/>
+                <constraint firstItem="uYl-bR-QjR" firstAttribute="centerY" secondItem="GHy-xs-VEy" secondAttribute="centerY" id="ftz-ui-IHm"/>
+                <constraint firstItem="GHy-xs-VEy" firstAttribute="leading" secondItem="0qr-Bg-O5K" secondAttribute="trailing" constant="20" id="ixq-OL-ecT"/>
+                <constraint firstItem="uYl-bR-QjR" firstAttribute="leading" secondItem="GHy-xs-VEy" secondAttribute="trailing" constant="20" id="mYg-Gb-pxL"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="6QA-By-T3V" secondAttribute="trailing" constant="16" id="pbt-6z-CkD"/>
+                <constraint firstItem="0qr-Bg-O5K" firstAttribute="centerY" secondItem="GHy-xs-VEy" secondAttribute="centerY" id="uPF-8R-cz6"/>
+                <constraint firstItem="GHy-xs-VEy" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="utz-Mo-O6U"/>
+                <constraint firstItem="4uN-vv-Ro7" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="vt1-f2-EWS"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="wjf-Lk-Y8u" secondAttribute="trailing" constant="41" id="wMw-Lm-9Xe"/>
+                <constraint firstItem="Ctn-Lx-Smv" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="yNG-A1-fpf"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="137.68115942028987" y="141.96428571428569"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="facebook" width="42" height="42"/>
+        <image name="google" width="100" height="100"/>
+        <image name="loginLogo" width="293" height="458"/>
+        <image name="vk" width="42" height="42"/>
+    </resources>
+</document>

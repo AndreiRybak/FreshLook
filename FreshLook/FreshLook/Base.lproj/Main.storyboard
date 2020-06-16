@@ -21,7 +21,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="NMv-Pj-FHe">
             <objects>
-                <tabBarController id="XCk-Xp-492" customClass="TabBarController" customModule="FreshLook" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController restorationIdentifier="TabBarController" storyboardIdentifier="TabBarController" id="XCk-Xp-492" customClass="TabBarController" customModule="FreshLook" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="zmp-rL-2iD">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
